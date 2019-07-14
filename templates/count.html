@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="count">
+<h1>There are total of {{ count }} words in below input !</h1>
+<br>
+<font color="black">
+{{ inputtext }}
+</font>
+<br>
+<h2>Specific Word Count</h2>
+{% for word, count in worddict %}
+<font color="black">
+<b>{{ word }}</b> : {{ count }}
+</font>
+<br>s
+<br>
+{% endfor %}
+</div>
+{% endblock %}

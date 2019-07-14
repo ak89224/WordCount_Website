@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="home">
+<form action="{% url 'count' %}">
+    <textarea name="InputText" id="" cols="50" rows="10"></textarea>
+    <br>
+    <input type="submit" value="Count!">
+</form>
+</div>
+{% endblock %}
